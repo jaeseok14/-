@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>수강신청</title>
+  <link rel="stylesheet" href="css/getForm.css">
+</head>
+<body>
+  <div id="container">
+    <h1>수강신청</h1>
+    <form name="testForm">
+      <fieldset>
+        <legend>신청인</legend>
+        <ul>
+          <li>
+            <label class="reg" for="userName">이름</label>
+            <input type="text" id="userName" name="userName" maxlength="50">
+          </li>
+          <li>
+            <label class="reg" for="major">학과</label>
+            <select name="major" id="major">
+              <option>----학과선택----</option>
+              <option value="computer">컴퓨터공학과</option>
+              <option value="chemical">화학공학과</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>신청과목</legend>
+        <p>이달에 신청할 과목을 선택하세요</p>
+        <label><input type="radio" name="subject" value="speaking">회화</label>
+        <label><input type="radio" name="subject" value="grammar">문법</label>
+      </fieldset>
+      <fieldset>
+        <legend>메일함</legend>
+        <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요</p>
+        <label><input type="radio" name="newsSubject1" value="overseas">해외단신</label> 
+        <label><input type="radio" name="newsSubject2" value="5minute">5분회화</label> 
+      </fieldset>
+    </form>
+    <button id="send">전송하기</button>
+  </div>
+</body>
+<script src="js/getFrom.js"></script>
+</html>
